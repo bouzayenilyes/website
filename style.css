@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: Roboto;
+    color: black;
+}
+nav img {
+    width: 190px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    background-color: #E0AA53;
+    margin: auto;
+    width: 80%;
+    border-radius:0px 0px 20px 20px;
+}
+
+a:hover{
+    background-color: rgb(222, 223, 219);
+    border-radius: 5px;
+    color: green;
+}
+a{
+    margin : 0px 20px 0px 0px ; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+nav button {
+    margin : 0px 100px 0px 0px;
+}
+
+nav button{
+    background-color: chocolate;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0px 0px 10px 0px rgb(94, 92, 92);
+    
+}
