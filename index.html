@@ -1,92 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import the Css File  -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>website</title> 
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon website</title>
+</head>
+
 <body>
-  <nav>
-    <img src="/images/Amazon-logo.png" alt="">
-    <a href="">Home</a>
-    <a href="">Services</a>
-    <a href="">About us</a>
-    <a href="">Contact US</a>
-    <button class="button-86" role="button">Buy Now</button>
-  </nav>
-  <h1>this is the final update</h1>
-  <style>
+    <!-- Navbar section  -->
+    <nav>
+        <img src="/images/Amazon-logo.png" alt="logo of amazon " width="190px">
+        <div class="header-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button>Sign In</button>
+        </div>
+    </nav>
 
+    <!-- Main content  --> 
 
-/* CSS */
-.button-86 {
-  all: unset;
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
-  background: transparent;
-  border: none;
-  position: relative;
-  color: #f0f0f0;
-  cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Amazon</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button>Search</button>
+                </div>
+            </div>
+        </section>
 
-.button-86::after,
-.button-86::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all .4s;
-}
+        <!-- Products section -->
+        <section class="products">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/images/boots.png" alt="Product">
+                    <h3>Product Title</h3>
+                    <p class="price">$99.99</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                
+                
+                <!-- Repeat product-card div for more products -->
+            </div>
+        </section>
 
-.button-86::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
-}
+        <!-- Categories section -->
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/electronics.png" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="/images/fashion.png" alt="Fashion" width="">
+                    <h3>Fashion</h3>
+                </div>
+                <div class="category-card">
+                    <img src="/images/books.png" alt="Books">
+                    <h3>Books</h3>
+                </div>
+            </div>
+        </section>
 
-.button-86::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.button-86:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.button-86:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.button-86:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
-  </style>
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+            <div class="footer-links">
+                <h4><i class="fas fa-info-circle"></i> Get to Know Us</h4>
+                <a href="#"><i class="fas fa-briefcase"></i> Careers</a>
+                <a href="#"><i class="fab fa-amazon"></i> About Amazon</a>
+                <a href="#"><i class="fas fa-chart-line"></i> Investor Relations</a>
+            </div>
+            <div class="footer-links">
+                <h4><i class="fas fa-dollar-sign"></i> Make Money with Us</h4>
+                <a href="#"><i class="fas fa-store"></i> Sell products</a>
+                <a href="#"><i class="fas fa-handshake"></i> Become an Affiliate</a>
+            </div>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

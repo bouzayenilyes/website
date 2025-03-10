@@ -1,43 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Font Importation */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    font-family: Roboto;
-    color: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-nav img {
-    width: 190px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: auto;
+
+}
+
+nav {
+    background-color: #f90;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 0px 0px 20px 20px;   
+    height: 100px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: black;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
 }
 
-nav{
-    background-color: #E0AA53;
-    margin: auto;
-    width: 80%;
-    border-radius:0px 0px 20px 20px;
+nav a:hover {
+    color: #fff8f5;
+    background-color: rgb(238, 154, 27);
+    border-radius: 4px;
 }
 
-a:hover{
-    background-color: rgb(222, 223, 219);
-    border-radius: 5px;
-    color: green;
-}
-a{
-    margin : 0px 20px 0px 0px ; 
-    text-align: center;
-    color: rgb(0, 0, 0);
-
-}
 nav button {
-    margin : 0px 100px 0px 0px;
+    margin-left: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav button{
-    background-color: chocolate;
-    border-radius: 0px 5px 5px 5px;
-    box-shadow: 0px 0px 10px 0px rgb(94, 92, 92);
-    
+nav button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section  */
+.hero {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.search-bar {
+    margin: 1rem auto;
+    max-width: 600px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #7e7d7d;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0.8rem 1.5rem;
+    background-color: #f90;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #B12704;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rating {
+    color: #f90;
+    margin: 0.5rem 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffd814;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.category-card {
+    text-align: center;
+    padding: 1rem;
+}
+
+.category-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+/* La Partie Footer  */
+
+footer {
+    background-color: #232f3e;
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links h3 {
+    color: rgb(255, 201, 121);
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #f90;
+}
+
+.footer-links a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0;
+}
+
+.footer-links a:hover {
+    color: #f90;
+    transform: translateX(5px);
+    text-decoration: none;
 }
